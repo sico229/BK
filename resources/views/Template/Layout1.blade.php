@@ -1,7 +1,28 @@
 @include('Template.Includes.Header')
 <div class="container-fluid template1">
+
     <header>
-        yguhjkl
+        <div class="Ligne1">
+            <ul>
+                <li><a href="">Particuliers</a></li>
+                <li><a href="">Banque Privée</a></li>
+                <li><a href="">Professionnels</a></li>
+                <li><a href="">Entreprises</a></li>
+            </ul>
+            <div>
+                <a href="">Accessibilité</a>
+                <ul>
+                    <li><span class="fi fi-gr"> Fr</li>
+                    <li>Fr</li>
+                    <li>Fr</li>
+                    <li>Fr</li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            Ligne2
+        </div>
     </header>
     <main>
         <aside>

@@ -1,6 +1,12 @@
-@import url("_variables.scss");
+
 $hauteurHeader:90px;
 $indexHauteur:100;
+$largeurAside:130px;
+$themeColor1:#036640;
+$themeColor2:#00915a;
+$themeGris:#373737;
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@200&family=Montserrat+Alternates:wght@200&display=swap');
+@import "https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css";
 *{
     box-sizing: border-box;
     margin: 0;
@@ -9,31 +15,131 @@ $indexHauteur:100;
 }
 
 .template1{
-    background-color: red;
     min-height: 100vh !important;
     position: relative;
     margin: 0;
     padding: 0;
 
+
     header{
-        position: fixed;
+        position: sticky;
         top:0;
         left:0;
         width:100%;
         background-color: green;
-        height: $hauteurHeader;
+        // height: $hauteurHeader;
         z-index: $indexHauteur;
+
+        .Ligne1{
+            background-color: $themeColor2;
+            position: relative;
+            height: 35px;
+            top: 0;
+            transition: 0.2s;
+            display: flex;
+
+            a:hover{
+                background-color: $themeColor1;
+                transition: 0.2s;
+            }
+
+            &>ul{
+                list-style: none;
+                display: flex;
+                background-color: $themeColor2;
+                width: 50%;
+                height: 100%;
+
+                li{
+                    margin: 0;
+                    padding: 0;
+                    width: 25%;
+
+                    a{
+                        text-decoration: none;
+                        display: flex;
+                        color: #fff;
+                        height: 100%;
+                        width: 100%;
+                        text-align: center;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    &:nth-child(1){
+                        background-color: $themeColor1;
+                    }
+                }
+            }
+            &>div{
+                display: flex;
+                justify-content: flex-end;
+                width: 50%;
+                align-items: center;
+                padding-right: 20px;
+                
+                a{
+                    text-decoration: none;
+                    display: flex;
+                    color: #fff;
+                    height: 100%;
+                    text-align: center;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0 10px;
+                }
+
+                ul{
+                    list-style-type: none;
+                    background-color: grey;
+                    padding: 0;margin: 0;
+                    height: 100%;
+                    display: block;
+                    justify-content: center;
+                    align-items: center;
+
+                    li{
+                        margin: 0;padding: 0;
+
+                        display: none;
+
+                        img{
+                            width:25px;
+                            
+                        }
+                    }
+
+                    li:nth-child(1){
+                       
+                        display: flex;
+                        text-align: center;
+                        height: 100%;
+                        width: 50px;
+                        background-color: green;
+                    }
+                }
+            }
+
+
+        }
+
+        .haut{
+           
+            top:-35px;
+            transition: 0.2s;
+        }
     }
     main{
         min-height: 100vh;
         position: relative;
-        top:$hauteurHeader;
-        display: grid;
-        grid-template-areas:"aside contenu" ;
+         display: grid;
+         grid-template-areas:"aside contenu" ;
         
 
         aside{
-            grid-area: aside;
+             grid-area: aside;
+            float: left;
+            width: $largeurAside;
             position: fixed;
             min-height: calc(100vh - $hauteurHeader);
             background-color: blue;
@@ -41,6 +147,9 @@ $indexHauteur:100;
         }
         #template1Container{
             grid-area: contenu;
+            background: red;
+            padding: 5px 5px 5px calc($largeurAside + 5px);
+            
         }
 
     }

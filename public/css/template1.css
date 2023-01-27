@@ -1,4 +1,5 @@
-@import url("_variables.scss");
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@200&family=Montserrat+Alternates:wght@200&display=swap");
+@import "https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,36 +8,120 @@
 }
 
 .template1 {
-  background-color: red;
   min-height: 100vh !important;
   position: relative;
   margin: 0;
   padding: 0;
 }
 .template1 header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
   background-color: green;
-  height: 90px;
   z-index: 100;
+}
+.template1 header .Ligne1 {
+  background-color: #00915a;
+  position: relative;
+  height: 35px;
+  top: 0;
+  transition: 0.2s;
+  display: flex;
+}
+.template1 header .Ligne1 a:hover {
+  background-color: #036640;
+  transition: 0.2s;
+}
+.template1 header .Ligne1 > ul {
+  list-style: none;
+  display: flex;
+  background-color: #00915a;
+  width: 50%;
+  height: 100%;
+}
+.template1 header .Ligne1 > ul li {
+  margin: 0;
+  padding: 0;
+  width: 25%;
+}
+.template1 header .Ligne1 > ul li a {
+  text-decoration: none;
+  display: flex;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.template1 header .Ligne1 > ul li:nth-child(1) {
+  background-color: #036640;
+}
+.template1 header .Ligne1 > div {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  align-items: center;
+  padding-right: 20px;
+}
+.template1 header .Ligne1 > div a {
+  text-decoration: none;
+  display: flex;
+  color: #fff;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+}
+.template1 header .Ligne1 > div ul {
+  list-style-type: none;
+  background-color: grey;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.template1 header .Ligne1 > div ul li {
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+.template1 header .Ligne1 > div ul li img {
+  width: 25px;
+}
+.template1 header .Ligne1 > div ul li:nth-child(1) {
+  display: flex;
+  text-align: center;
+  height: 100%;
+  width: 50px;
+  background-color: green;
+}
+.template1 header .haut {
+  top: -35px;
+  transition: 0.2s;
 }
 .template1 main {
   min-height: 100vh;
   position: relative;
-  top: 90px;
   display: grid;
   grid-template-areas: "aside contenu";
 }
 .template1 main aside {
   grid-area: aside;
+  float: left;
+  width: 130px;
   position: fixed;
   min-height: calc(100vh - 90px);
   background-color: blue;
 }
 .template1 main #template1Container {
   grid-area: contenu;
+  background: red;
+  padding: 5px 5px 5px 135px;
 }
 
 /*# sourceMappingURL=template1.css.map */
