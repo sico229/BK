@@ -1,0 +1,28 @@
+@import "_variables.scss";
+.AccueilSection1{
+    height: 560px;
+    background-image: url('../../public/img/visuel-home.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    padding-left:calc($largeurAside + 15px);
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+
+    h3{
+        color: #fff;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px $themeGris;
+        text-transform: uppercase;
+    }
+    p{
+        width: 50%;
+        color: #fff;
+        font-size: 1.2em;
+        font-weight: 400;
+    }
+   
+    
+}

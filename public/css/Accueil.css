@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@200&family=Montserrat+Alternates:wght@200&display=swap");
+.AccueilSection1 {
+  height: 560px;
+  background-image: url("../../public/img/visuel-home.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  padding-left: 145px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+}
+.AccueilSection1 h3 {
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #373737;
+  text-transform: uppercase;
+}
+.AccueilSection1 p {
+  width: 50%;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=Accueil.css.map */
