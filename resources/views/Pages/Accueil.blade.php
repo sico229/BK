@@ -10,5 +10,10 @@
             ouverture de compte en ligne, simulation de crédit,
             assurance, épargne… une banque présente à vos côtés au quotidien.</p>
 
+
     </div>
+    <div class="AccueilSection2">
+        rftgyhujiko
+    </div>
+    <div class="bg-danger text-center sol">fghjklm</div>
 @endsection
