@@ -321,8 +321,8 @@
                 <p>Simulez gratuitement votre prêt</p>
                 <div>
                     <div>
-                        <div>Montant :<span>76</span></div>
-                        <div>Durée de remboursement :<span>76</span></div>
+                        <div>Montant :<span class="MontantShow text-bold"></span></div>
+                        <div>Durée de remboursement :<span class="DureShow">76</span></div>
                         <div class="sliderContainer">
 
                             <div>
@@ -334,13 +334,14 @@
                                 <input class="Amount" type="range" min="500" max="50000" step="500"
                                     value="25000">
                             </div>
-                            <div>
+                            <div class="my-5">
                                 <p>
-                                    <span>0€</span>
-                                    <span>gt</span>
-                                    <span>50 000€</span>
+                                    <span>9</span>
+                                    <span class="DureCurrentValue">gt</span>
+                                    <span>120</span>
                                 </p>
-                                <input type="range" min="500" max="50000" step="500" value="25000">
+                                <input class="dure" type="range" min="9" max="120" step="3"
+                                    value="6">
                             </div>
 
                         </div>

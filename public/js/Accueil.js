@@ -14,14 +14,28 @@ $(document).ready(function () {
     });
 
     //Calculateur///////////////////////
-
-    var AmmountCurrentValue = $(".AmmountCurrentValue");
-    var montantInput = document.querySelector(".Amount");
-    montantInput.oninput = function () {
-        AmmountCurrentValue.html(this.value).css(
+    function Calculateur() {
+        var AmmountCurrentValue = $(".AmmountCurrentValue");
+        var DureCurrentValue = $(".DureCurrentValue");
+        var montantInput = document.querySelector(".Amount");
+        var dureInput = document.querySelector(".dure");
+        AmmountCurrentValue.html(montantInput.value).css(
             "left",
-            this.value / 500 + "%"
+            montantInput.value / 500 + "%"
         );
-        console.log();
+        DureCurrentValue.html(dureInput.value).css(
+            "left",
+            dureInput.value / 1.2 + "%"
+        );
+
+        $(".MontantShow").html(montantInput.value + "€");
+        $(".DureShow").html(dureInput.value);
+    }
+
+    document.querySelector(".Amount").oninput = function () {
+        Calculateur();
+    };
+    document.querySelector(".dure").oninput = function () {
+        Calculateur();
     };
 });
