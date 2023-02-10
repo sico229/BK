@@ -12,4 +12,16 @@ $(document).ready(function () {
             },
         },
     });
+
+    //Calculateur///////////////////////
+
+    var AmmountCurrentValue = $(".AmmountCurrentValue");
+    var montantInput = document.querySelector(".Amount");
+    montantInput.oninput = function () {
+        AmmountCurrentValue.html(this.value).css(
+            "left",
+            this.value / 500 + "%"
+        );
+        console.log();
+    };
 });

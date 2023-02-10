@@ -328,10 +328,11 @@
                             <div>
                                 <p>
                                     <span>0€</span>
-                                    <span>gt</span>
+                                    <span class="AmmountCurrentValue">gt</span>
                                     <span>50 000€</span>
                                 </p>
-                                <input type="range" min="500" max="50000" step="500" value="25000">
+                                <input class="Amount" type="range" min="500" max="50000" step="500"
+                                    value="25000">
                             </div>
                             <div>
                                 <p>
