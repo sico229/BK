@@ -325,11 +325,22 @@
                         <div>Durée de remboursement :<span>76</span></div>
                         <div class="sliderContainer">
 
-                            <p>
-                                <span>0€</span>
-                                <span>10 000€</span>
-                            </p>
-                            <input type="range" min="500" max="10000" step="500" value="5000">
+                            <div>
+                                <p>
+                                    <span>0€</span>
+                                    <span>gt</span>
+                                    <span>50 000€</span>
+                                </p>
+                                <input type="range" min="500" max="50000" step="500" value="25000">
+                            </div>
+                            <div>
+                                <p>
+                                    <span>0€</span>
+                                    <span>gt</span>
+                                    <span>50 000€</span>
+                                </p>
+                                <input type="range" min="500" max="50000" step="500" value="25000">
+                            </div>
 
                         </div>
 
@@ -342,21 +353,5 @@
 @section('scripts')
     <script src="{{ asset('node_modules/jquery/dist/jquery.min.js') }}"></script>
     <script src="{{ asset('node_modules/owl.carousel/dist/owl.carousel.min.js') }}"></script>
-    <script>
-        $(document).ready(function() {
-            $('.owl-carousel').owlCarousel({
-                center: true,
-                items: 7,
-                autoplay: true,
-                loop: true,
-                margin: 10,
-                nav: false,
-                responsive: {
-                    600: {
-                        items: 4
-                    }
-                }
-            });
-        });
-    </script>
+    <script src="{{ asset('public/js/Accueil.js') }}"></script>
 @endsection
