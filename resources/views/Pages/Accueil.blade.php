@@ -323,6 +323,9 @@
                     <div>
                         <div>Montant :<span class="MontantShow text-bold"></span></div>
                         <div>Durée de remboursement :<span class="DureShow">76</span></div>
+                        <div>Mensualité: <span class="mensualite"></span></div>
+                        <div>TAEG : <span>2.7%</span></div>
+                        <div>Montant Total à rembourser : <span class="Total">2.7%</span></div>
                         <div class="sliderContainer">
 
                             <div>
