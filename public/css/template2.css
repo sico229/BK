@@ -44,29 +44,47 @@
   align-items: center;
   flex-direction: row;
   justify-content: flex-end;
-  position: relative;
+  position: relative !important;
 }
 .ligne1 div:nth-child(2) a {
   background-color: unset;
+  justify-self: flex-start;
 }
 .ligne1 div:nth-child(2) a:hover {
   background-color: #036640;
 }
-.ligne1 div:nth-child(2) ul {
-  position: relative;
-  top: 30px;
+.ligne1 div:nth-child(2) div {
+  width: 120px;
+}
+.ligne1 div:nth-child(2) div ul {
+  position: fixed;
+  top: 0;
   list-style-type: none;
   padding: 0;
   width: 100px;
-  background-color: red;
-  min-height: 50px;
+  padding: 5px;
+  background-color: #00bf76;
 }
-.ligne1 div:nth-child(2) ul li {
+.ligne1 div:nth-child(2) div ul li {
+  position: relative;
   cursor: pointer;
   height: 25px;
-  margin-top: 5px;
+  margin-top: 7px;
+  justify-content: space-between;
+  font-weight: bold;
+  display: none;
 }
-.ligne1 div:nth-child(2) ul li:nth-child(1) {
+.ligne1 div:nth-child(2) div ul li span {
+  margin: 0 2px;
+}
+.ligne1 div:nth-child(2) div ul li:nth-child(1) {
+  display: block;
+}
+.ligne1 div:nth-child(2) div ul li:hover {
+  background-color: #00915a;
+  color: #fff;
+}
+.ligne1 div:nth-child(2) div ul:hover li {
   display: block;
 }
 

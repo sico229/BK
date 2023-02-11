@@ -50,34 +50,61 @@
         align-items: center;
         flex-direction: row;
         justify-content: flex-end;
-        position: relative;
+        position: relative !important;
 
         a{
             background-color: unset;
+            justify-self: flex-start;
 
             &:hover{
                 background-color: $themeColor1;
             }
         }
 
+       div{
+        width: 120px;
+
         ul{
-            position: relative;
-            top: 30px;
+            position: fixed;
+            top:0;
             list-style-type: none;
             padding: 0;
             width: 100px;
-            background-color: red;
-            min-height: 50px;
+            padding: 5px;
+            background-color: lighten($themeColor2,9);
+
+           
             
             li{
+                position: relative;
                 cursor: pointer;    
                 height: 25px;
-                margin-top: 5px;
+                margin-top: 7px;              
+                justify-content: space-between;
+                font-weight: bold;
+                display: none;
+
+
+                span{
+                    margin:0 2px;
+                }
 
                 &:nth-child(1){
                     display: block;
+                    // color: #fff;
+                }
+
+                &:hover{
+                    background-color: $themeColor2;
+                    color: #fff;
+                    
                 }
             }
+
+            &:hover li{
+                display: block;
+            }
         }
+       }
     }
 }

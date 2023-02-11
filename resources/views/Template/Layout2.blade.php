@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('public/css/template2.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css" />
     <title>Document</title>
 </head>
 
@@ -22,12 +23,17 @@
             </div>
             <div>
                 <a href="http://">Accessibilité</a>
-                <ul>
-                    <li>Francais</li>
-                    <li>English</li>
-                    <li>Español</li>
-                </ul>
+                <div>
+                    <ul>
+                        <li><span class="fi fi-fr"></span>Francais</li>
+                        <li><span class="fi fi-gb"></span>English</li>
+                        <li><span class="fi fi-es"></span>Español</li>
+                    </ul>
+                </div>
             </div>
+        </div>
+        <div class="sticky">
+            ghj
         </div>
     </header>
 
