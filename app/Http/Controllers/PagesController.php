@@ -14,7 +14,7 @@ class PagesController extends Controller
      */
     public function Index()
     {
-        return Helpers::Viewer("Pages.Accueil");
+        return Helpers::Viewer("Pages.Accueil2");
     }
 
     /**
