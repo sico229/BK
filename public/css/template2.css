@@ -105,10 +105,10 @@ body {
   display: flex;
   align-items: center;
 }
-.stick div:nth-child(1) {
+.stick div:nth-child(2) {
   display: flex;
 }
-.stick div:nth-child(1) a {
+.stick div:nth-child(2) a {
   width: 230px;
   background-image: url("../../public/img/bnp-alone.png");
   background-repeat: no-repeat;
@@ -119,7 +119,7 @@ body {
   padding: 0;
   text-decoration: none;
 }
-.stick div:nth-child(1) p {
+.stick div:nth-child(2) p {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -128,12 +128,15 @@ body {
   align-items: center;
   font-weight: bold;
 }
-.stick div:nth-child(2) {
+.stick div:nth-child(1) {
+  display: none;
+}
+.stick div:nth-child(3) {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-.stick div:nth-child(2) a {
+.stick div:nth-child(3) a {
   margin: 0 10px;
   padding: 10px 10px;
   border-radius: 30px;
@@ -146,14 +149,14 @@ body {
   transition: 0.3s;
   font-weight: 700;
 }
-.stick div:nth-child(2) a:hover {
+.stick div:nth-child(3) a:hover {
   transition: 0.3s;
   background-color: #1b8472;
 }
-.stick div:nth-child(2) a:nth-child(2) {
+.stick div:nth-child(3) a:nth-child(2) {
   background-color: #00915a;
 }
-.stick div:nth-child(2) a:nth-child(2):hover {
+.stick div:nth-child(3) a:nth-child(2):hover {
   background-color: #00452b;
 }
 .stick div {
@@ -245,25 +248,54 @@ body {
     display: flex;
   }
   .stick div:nth-child(1) {
+    display: block;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  .stick div:nth-child(1) span {
+    width: 100%;
+    display: block;
+    border-top: 3px solid #036640;
+    margin: 2px 0;
+  }
+  .stick div:nth-child(2) {
     width: 20%;
     background-size: contain;
   }
-  .stick div:nth-child(1) a {
+  .stick div:nth-child(2) a {
     background-position: center center;
     background-size: contain;
   }
-  .stick div:nth-child(1) p {
+  .stick div:nth-child(2) p {
     display: none;
   }
-  .stick div:nth-child(2) {
+  .stick div:nth-child(3) {
     width: 80% !important;
   }
-  .stick div:nth-child(2) a {
+  .stick div:nth-child(3) a {
     font-size: 0.7em;
     display: inline-block;
     border-radius: 5px;
     width: 49%;
     text-align: center;
+  }
+  #ConteneurPrincipal {
+    display: block;
+    position: relative;
+  }
+  #ConteneurPrincipal nav {
+    display: block;
+    position: fixed;
+    left: -100%;
+    transition: 0.2s;
+  }
+  #ConteneurPrincipal nav.show {
+    left: 0;
+    transition: 0.2s;
   }
 }
 
