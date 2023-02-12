@@ -212,7 +212,6 @@ body{
     nav{           
         position: fixed;
         top: 110px;
-        width:140px;
         min-height: 100%;
         z-index: 9 !important;          
         left: 0;
@@ -273,6 +272,47 @@ body{
      #main{
         grid-area: main;
         padding: 15px;
-        background-color: red;
      }
+}
+@media screen and (max-width:720px){
+    .ligne1{
+        div:nth-child(1){
+            display: none;
+        }
+        div:nth-child(2){
+            width: 100%;
+            a{
+                display: none;
+            }
+            ul{
+                z-index: 999999;
+            }
+        }
+    }
+    .stick{
+        
+        margin: 0;
+        padding: 0;
+        display: flex;
+        div:nth-child(1){
+            width: 20%;
+            background-size: contain;
+
+            a{
+                background-position:center center;
+                background-size: contain;
+            }
+            p{display: none;}
+        }
+        div:nth-child(2){
+            width:80% !important;
+            a{
+                font-size:0.7em;
+                display: inline-block;
+                border-radius:5px;
+                width:49%;
+                text-align: center;
+            }
+        }
+    }
 }

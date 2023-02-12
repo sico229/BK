@@ -174,7 +174,6 @@ body {
 #ConteneurPrincipal nav {
   position: fixed;
   top: 110px;
-  width: 140px;
   min-height: 100%;
   z-index: 9 !important;
   left: 0;
@@ -225,7 +224,47 @@ body {
 #ConteneurPrincipal #main {
   grid-area: main;
   padding: 15px;
-  background-color: red;
+}
+
+@media screen and (max-width: 720px) {
+  .ligne1 div:nth-child(1) {
+    display: none;
+  }
+  .ligne1 div:nth-child(2) {
+    width: 100%;
+  }
+  .ligne1 div:nth-child(2) a {
+    display: none;
+  }
+  .ligne1 div:nth-child(2) ul {
+    z-index: 999999;
+  }
+  .stick {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  .stick div:nth-child(1) {
+    width: 20%;
+    background-size: contain;
+  }
+  .stick div:nth-child(1) a {
+    background-position: center center;
+    background-size: contain;
+  }
+  .stick div:nth-child(1) p {
+    display: none;
+  }
+  .stick div:nth-child(2) {
+    width: 80% !important;
+  }
+  .stick div:nth-child(2) a {
+    font-size: 0.7em;
+    display: inline-block;
+    border-radius: 5px;
+    width: 49%;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=template2.css.map */
