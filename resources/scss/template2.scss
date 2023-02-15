@@ -124,6 +124,7 @@ body{
     box-shadow: 1px 1px 1px $themeGris;
     display: flex;
     align-items: center;
+    z-index: 1;
    
 
     div:nth-child(2){
@@ -274,7 +275,9 @@ body{
 
      #main{
         grid-area: main;
-        padding: 15px;
+        padding: 15px;        
+        margin: 0 !important;
+        padding: 0 !important;
      }
 }
 @media screen and (max-width:720px){

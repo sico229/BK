@@ -1,0 +1,124 @@
+@import "_variables.scss";
+#AccueilSection1{
+    height: 100vh;
+    background-image: url('../../public/img/visuel-home.jpg');    
+    background-position: center center;
+    background-size: cover;
+    object-fit: fill;
+    position: relative;
+    padding: 10px 50px;
+
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    justify-content: center;
+
+    h2{
+        width: 50%;
+        font-weight: bolder;
+        text-shadow: 1px 1px 1px $themeColor1;
+    }
+
+    p{
+        width: 50%;
+        font-size: 1.2em;
+    }
+    .container{
+        position: absolute;
+        top: 70%;
+        left:10%;
+        width: calc(100% - 20%);
+        height: 75vh;
+        display: flex;
+        justify-content: space-between;
+
+        &>div{
+            height: 540px;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0px 0px 5px $themeGris;
+            
+
+            div{
+                height: 50%;
+                padding: 20px;
+
+                &:nth-child(1){
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+    
+                    p{
+                        width: 100%;
+                        text-align: center;
+
+                        i{
+                            font-size: 3em;
+                            color: #fff;
+                            font-weight: lighter;
+                        }
+                        a{
+                            padding: 5px;
+                            height: 50px;
+                            background-color: $themeColor2;
+                            color: #fff;
+                            text-decoration: none;
+                            border-radius: 15px;
+                            box-shadow: 1px 1px 1px $themeGris;
+                            font-size: 0.9em;
+
+                            &:hover{
+                                background-color: $themeColor1;
+                                transition: 0.2s;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(1){
+               div:nth-child(1){
+                background-image: linear-gradient(90deg,#00915a,#5ec66b);
+                
+
+                
+               }
+            }
+            &:nth-child(2){
+               div:nth-child(1){
+                background-image: linear-gradient(90deg,#2491ee,#1cc7f2);
+               }
+            }
+            &:nth-child(3){
+               div:nth-child(1){
+                background-image: linear-gradient(90deg,#7e50a8,#d563a7);
+               }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:720px){
+    #AccueilSection1{
+
+        h2{
+            font-size: 1.1em;
+        }
+        p{
+            font-size:0.9em;
+            width: 80%;
+        }
+        .container{
+            width: 90%;
+            flex-direction: column;
+
+            &>div{
+                width:90%;
+                min-height: 450px;
+                margin: 10px 0;
+                box-shadow: 0px 0px 5px $themeGris;
+            }
+        }
+    }
+}

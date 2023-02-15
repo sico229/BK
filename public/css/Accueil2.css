@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@200&family=Montserrat+Alternates:wght@200&display=swap");
+#AccueilSection1 {
+  height: 100vh;
+  background-image: url("../../public/img/visuel-home.jpg");
+  background-position: center center;
+  background-size: cover;
+  object-fit: fill;
+  position: relative;
+  padding: 10px 50px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  justify-content: center;
+}
+#AccueilSection1 h2 {
+  width: 50%;
+  font-weight: bolder;
+  text-shadow: 1px 1px 1px #036640;
+}
+#AccueilSection1 p {
+  width: 50%;
+  font-size: 1.2em;
+}
+#AccueilSection1 .container {
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  width: 80%;
+  height: 75vh;
+  display: flex;
+  justify-content: space-between;
+}
+#AccueilSection1 .container > div {
+  height: 540px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 5px #373737;
+}
+#AccueilSection1 .container > div div {
+  height: 50%;
+  padding: 20px;
+}
+#AccueilSection1 .container > div div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#AccueilSection1 .container > div div:nth-child(1) p {
+  width: 100%;
+  text-align: center;
+}
+#AccueilSection1 .container > div div:nth-child(1) p i {
+  font-size: 3em;
+  color: #fff;
+  font-weight: lighter;
+}
+#AccueilSection1 .container > div div:nth-child(1) p a {
+  padding: 5px;
+  height: 50px;
+  background-color: #00915a;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 15px;
+  box-shadow: 1px 1px 1px #373737;
+  font-size: 0.9em;
+}
+#AccueilSection1 .container > div div:nth-child(1) p a:hover {
+  background-color: #036640;
+  transition: 0.2s;
+}
+#AccueilSection1 .container > div:nth-child(1) div:nth-child(1) {
+  background-image: linear-gradient(90deg, #00915a, #5ec66b);
+}
+#AccueilSection1 .container > div:nth-child(2) div:nth-child(1) {
+  background-image: linear-gradient(90deg, #2491ee, #1cc7f2);
+}
+#AccueilSection1 .container > div:nth-child(3) div:nth-child(1) {
+  background-image: linear-gradient(90deg, #7e50a8, #d563a7);
+}
+
+@media screen and (max-width: 720px) {
+  #AccueilSection1 h2 {
+    font-size: 1.1em;
+  }
+  #AccueilSection1 p {
+    font-size: 0.9em;
+    width: 80%;
+  }
+  #AccueilSection1 .container {
+    width: 90%;
+    flex-direction: column;
+  }
+  #AccueilSection1 .container > div {
+    width: 90%;
+    min-height: 450px;
+    margin: 10px 0;
+    box-shadow: 0px 0px 5px #373737;
+  }
+}
+
+/*# sourceMappingURL=Accueil2.css.map */
