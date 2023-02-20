@@ -23,7 +23,7 @@
 }
 #AccueilSection1 .container {
   position: absolute;
-  top: 80%;
+  top: 70%;
   left: 10%;
   width: 80%;
   height: 75vh;
@@ -31,7 +31,7 @@
   justify-content: space-between;
 }
 #AccueilSection1 .container > div {
-  height: 320px;
+  height: 450px;
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -74,6 +74,7 @@
 }
 #AccueilSection1 .container > div div:nth-child(2) {
   display: block;
+  background-color: #fff;
 }
 #AccueilSection1 .container > div div:nth-child(2) p {
   width: 100%;
@@ -89,6 +90,207 @@
 }
 #AccueilSection1 .container > div:nth-child(3) div:nth-child(1) {
   background-image: linear-gradient(90deg, #7e50a8, #d563a7);
+}
+
+#AccueilSection2 {
+  min-height: 50vh;
+  background-color: rgba(221, 221, 221, 0.5568627451);
+}
+
+#AccueilSection3 {
+  padding: 10px;
+}
+#AccueilSection3 h2 {
+  font-weight: bolder;
+  padding: 10px 20px;
+}
+#AccueilSection3 a {
+  display: block;
+  width: 250px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 10px;
+  margin: 10px auto;
+  background-color: #00915a;
+  border-radius: 10px;
+  color: #fff !important;
+  transition: 0.2s;
+  font-weight: 500;
+}
+#AccueilSection3 a:hover {
+  background-color: #036640;
+  transition: 0.2s;
+}
+#AccueilSection3 .stepsWrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+#AccueilSection3 .stepsWrapper > div {
+  width: 30%;
+}
+#AccueilSection3 .stepsWrapper > div > div {
+  background-image: url("../../public/img/inscription.png");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #036640;
+  object-fit: contain;
+  display: block;
+  margin: 5px auto;
+  position: relative;
+}
+#AccueilSection3 .stepsWrapper > div > div span {
+  width: 50px;
+  height: 50px;
+  background-color: #00915a;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  color: #fff;
+  font-weight: bolder;
+}
+#AccueilSection3 .stepsWrapper > div p span {
+  background-color: #00915a;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#AccueilSection3 .stepsWrapper > div:nth-child(2) > div {
+  background-image: url("../../public/img/documents.png");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #036640;
+  object-fit: contain;
+  display: block;
+  margin: 5px auto;
+  position: relative;
+}
+#AccueilSection3 .stepsWrapper > div:nth-child(3) > div {
+  background-image: url("../../public/img/approved.webp");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #036640;
+  object-fit: contain;
+  display: block;
+  margin: 5px auto;
+  position: relative;
+}
+
+#AccueilSection4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  background-image: url("../../public/img/c3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+#AccueilSection4 h2 {
+  font-size: 2em;
+  font-weight: bolder;
+  color: #fff;
+  text-shadow: 1px 1px 1px #00915a;
+  text-transform: uppercase;
+}
+
+#AccueilSection6 {
+  padding: 10px;
+}
+#AccueilSection6 .credit-card {
+  position: relative;
+  width: 350px;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-image: url("https://www.papierpeintpanoramique.fr/media/catalog/product/cache/871f459736130e239a3f5e6472128962/w/0/w05095-small.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#AccueilSection6 .visa {
+  background-color: #000066;
+}
+#AccueilSection6 .card-front, #AccueilSection6 .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  color: #fff;
+}
+#AccueilSection6 .card-front {
+  background-image: url("https://www.papierpeintpanoramique.fr/media/catalog/product/cache/871f459736130e239a3f5e6472128962/w/0/w05095-small.jpg");
+  background-size: cover;
+  background-position: center;
+  text-shadow: 1px 1px 3px rgb(8, 3, 56);
+  font-weight: bold;
+  box-shadow: 2px 2px 10px #cccccc;
+}
+#AccueilSection6 .card-back {
+  background-color: #dddddd;
+  transform: rotateY(180deg);
+}
+#AccueilSection6 .card-logo {
+  width: 50px;
+  height: 50px;
+  background-image: url(visa-logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+#AccueilSection6 .card-number {
+  position: absolute;
+  top: 100px;
+  left: 10px;
+  letter-spacing: 0.3ch;
+  font-size: 25px;
+}
+#AccueilSection6 .card-holder-name {
+  position: absolute;
+  top: 140px;
+  left: 10px;
+  font-size: 18px;
+}
+#AccueilSection6 .expiration-date {
+  position: absolute;
+  top: 160px;
+  right: 10px;
+  font-size: 16px;
+}
+#AccueilSection6 .security-code {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+}
+#AccueilSection6 .card-logo img {
+  width: 50px;
+  object-fit: contain;
 }
 
 @media screen and (max-width: 720px) {
@@ -108,6 +310,17 @@
     min-height: 450px;
     margin: 10px 0;
     box-shadow: 0px 0px 5px #373737;
+  }
+  #AccueilSection2 {
+    min-height: 200vh;
+    background-color: rgba(221, 221, 221, 0.5568627451);
+  }
+  #AccueilSection3 .stepsWrapper {
+    flex-direction: column;
+  }
+  #AccueilSection3 .stepsWrapper > div {
+    width: 90%;
+    margin: 5px auto;
   }
 }
 

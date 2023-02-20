@@ -47,7 +47,79 @@
 
         </div>
     </section>
+    <section id="AccueilSection2">
+        &nbsp;
+    </section>
+    <section id="AccueilSection3">
+        <h2>Comment ça marche?</h2>
+        <div class="stepsWrapper">
+            <div>
+                <div><span>1</span></div>
+                <p>
+                <h3 class="w-100 text-center text-bold">Demande en ligne</h3>
+                <p>Remplissez votre demande d'ouverture de compte en ligne en quelques minutes, sans bouger de chez vous sur
+                    nos plateformes sécurisées</p>
+                </p>
+            </div>
+            <div>
+                <div><span>2</span></div>
+                <p>
+                <h3 class="w-100 text-center text-bold">Envoyez vos documents</h3>
+                <p>Une fois votre demande d'ouverture de compte acceptée, vous enverrez les documents justificatifs de votre
+                    identité et de votre domicile</p>
+                </p>
+            </div>
+            <div>
+                <div><span>3</span></div>
+                <p>
+                <h3 class="w-100 text-center text-bold">Votre compte activé</h3>
+                <p>Après etude de vos documents, votre compte en ligne est activé et vous recevez vos identifiants pour vous
+                    connecter</p>
+                </p>
+            </div>
+
+
+
+
+        </div>
+        <a href="http://">Ouvrir compte en ligne</a>
+    </section>
+
+    <section id="AccueilSection4">
+        <h2>Nous vous accompagnons dans vos projets</h2>
+    </section>
+
+    <section id="AccueilSection6">
+        <div class="container">
+            <div class="credit-card visa">
+                <div class="card-front">
+                    <div class="card-logo">
+                        <img src="https://blog.logomyway.com/wp-content/uploads/2022/02/visa-logo-2.jpg" alt="Visa Logo">
+                    </div>
+                    <div class="card-number">1234 5678 9012 3456</div>
+                    <div class="card-holder-name">John Doe</div>
+                    <div class="expiration-date">MM/YY</div>
+                </div>
+                <div class="card-back">
+                    <div class="security-code">123</div>
+                    <div class="card-logo"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="AccueilSection5">
+        <div class="row px-0 mx-0">
+            <div class="col-md-6">
+
+            </div>
+            <div class="col-md-6">
+                ghjk
+            </div>
+        </div>
+    </section>
 @endsection
 @section('scripts')
+    <script type="module" src="{{asset('public/js/template2.js')}}"></script>
     <script type="module" src="{{asset('public/js/Accueil.js')}}"></script>
 @endsection

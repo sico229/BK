@@ -25,7 +25,7 @@
     }
     .container{
         position: absolute;
-        top: 80%;
+        top: 70%;
         left:10%;
         width: calc(100% - 20%);
         height: 75vh;
@@ -33,7 +33,7 @@
         justify-content: space-between;
 
         &>div{
-            height: 320px;
+            height: 450px;
             width: 30%;
             display: flex;
             flex-direction: column;
@@ -83,6 +83,7 @@
 
             div:nth-child(2){
                 display: block;
+                background-color: #fff;
 
                 p{
                     width: 100%;
@@ -115,6 +116,236 @@
     }
 }
 
+#AccueilSection2{
+    min-height: 50vh;
+    background-color: #dddddd8e;
+    
+}
+
+#AccueilSection3{
+    padding: 10px;
+
+    h2{
+        font-weight: bolder;
+        padding: 10px 20px;
+    }
+
+    a{
+        display: block;
+        width: 250px;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px 10px;
+        margin: 10px auto;
+        background-color: $themeColor2;
+        border-radius: 10px;
+        color: #fff !important;
+        transition: 0.2s;
+        font-weight: 500;
+
+
+        &:hover{
+            background-color: $themeColor1;
+            transition: 0.2s;
+        }
+    }
+
+    .stepsWrapper{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+
+      
+
+        &>div{
+            width:30%;
+            >div{
+                background-image: url("../../public/img/inscription.png");
+                background-position: center center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                border: 5px solid $themeColor1;
+                object-fit: contain;
+                display: block;
+                margin: 5px auto;
+                position: relative;
+                
+                span{
+                    width: 50px;
+                    height: 50px;
+                    background-color: $themeColor2;
+                    position: absolute;
+                    top:0;
+                    left:0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    border: 4px solid #fff;
+                    color: #fff;
+                    font-weight: bolder;
+                }
+            }
+           p{
+            span{
+                background-color: $themeColor2;
+                color: #fff;
+                width: 20px;
+                height: 20px;
+                display: flex;justify-content: center;
+                align-items: center;
+            }
+           }
+        }
+        &>div:nth-child(2){
+            >div{
+                background-image: url("../../public/img/documents.png");
+                background-position: center center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                border: 5px solid $themeColor1;
+                object-fit: contain;
+                display: block;
+                margin: 5px auto;
+                position: relative;
+            }
+        }
+        &>div:nth-child(3){
+            >div{
+                background-image: url("../../public/img/approved.webp");
+                background-position: center center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                border: 5px solid $themeColor1;
+                object-fit: contain;
+                display: block;
+                margin: 5px auto;
+                position: relative;
+            }
+        }
+
+       
+    }
+}
+
+#AccueilSection4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background-image: url("../../public/img/c3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
+    h2{
+        font-size: 2em;
+        font-weight: bolder;
+        color: #fff;
+        text-shadow: 1px 1px 1px $themeColor2;
+        text-transform: uppercase;
+    }
+}
+
+#AccueilSection6{
+    padding: 10px;
+    .credit-card {
+        position: relative;
+        width: 350px;
+        height: 200px;
+        border-radius: 10px;
+        overflow: hidden;
+        background-image: url("https://www.papierpeintpanoramique.fr/media/catalog/product/cache/871f459736130e239a3f5e6472128962/w/0/w05095-small.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      
+      .visa {
+        background-color: #000066;
+      }
+      
+      .card-front, .card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        color: #fff;
+      }
+      
+      .card-front {
+          background-image: url("https://www.papierpeintpanoramique.fr/media/catalog/product/cache/871f459736130e239a3f5e6472128962/w/0/w05095-small.jpg");
+          background-size: cover;
+        background-position: center;
+        text-shadow: 1px 1px 3px rgb(8, 3, 56);
+        font-weight:bold;
+        box-shadow: 2px 2px 10px #cccccc;
+      }
+      
+      .card-back {
+        background-color: #dddddd;
+        transform: rotateY(180deg);
+      }
+      
+      .card-logo {
+        width: 50px;
+        height: 50px;
+        background-image: url(visa-logo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+      
+      .card-number {
+        position: absolute;
+        top: 100px;
+        left: 10px;
+        letter-spacing: 0.3ch;
+        font-size: 25px;
+      }
+      
+      .card-holder-name {
+        position: absolute;
+        top: 140px;
+        left: 10px;
+        font-size: 18px;
+      }
+      
+      .expiration-date {
+        position: absolute;
+        top: 160px;
+        right: 10px;
+        font-size: 16px;
+      }
+      
+      .security-code {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 24px;
+      }
+      .card-logo img{
+          width:50px;
+          object-fit: contain;
+      }
+      
+}
+
+
 @media screen and (max-width:720px){
     #AccueilSection1{
 
@@ -134,6 +365,21 @@
                 min-height: 450px;
                 margin: 10px 0;
                 box-shadow: 0px 0px 5px $themeGris;
+            }
+        }
+    }
+
+    #AccueilSection2{
+        min-height: 200vh;
+        background-color: #dddddd8e
+    }
+
+    #AccueilSection3{
+        .stepsWrapper{
+            flex-direction: column;
+            &>div{
+                width:90%;
+                margin:5px auto;
             }
         }
     }
