@@ -23,7 +23,7 @@
 }
 #AccueilSection1 .container {
   position: absolute;
-  top: 70%;
+  top: 80%;
   left: 10%;
   width: 80%;
   height: 75vh;
@@ -31,7 +31,7 @@
   justify-content: space-between;
 }
 #AccueilSection1 .container > div {
-  height: 540px;
+  height: 320px;
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -49,6 +49,9 @@
 #AccueilSection1 .container > div div:nth-child(1) p {
   width: 100%;
   text-align: center;
+}
+#AccueilSection1 .container > div div:nth-child(1) p:nth-child(3) {
+  font-size: 0.8em;
 }
 #AccueilSection1 .container > div div:nth-child(1) p i {
   font-size: 3em;
@@ -68,6 +71,15 @@
 #AccueilSection1 .container > div div:nth-child(1) p a:hover {
   background-color: #036640;
   transition: 0.2s;
+}
+#AccueilSection1 .container > div div:nth-child(2) {
+  display: block;
+}
+#AccueilSection1 .container > div div:nth-child(2) p {
+  width: 100%;
+  font-size: 1.1em;
+  color: #036640;
+  font-weight: bold;
 }
 #AccueilSection1 .container > div:nth-child(1) div:nth-child(1) {
   background-image: linear-gradient(90deg, #00915a, #5ec66b);
