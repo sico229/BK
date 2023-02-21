@@ -265,90 +265,31 @@
     justify-content: center;
     align-items: center;
     background-color: #dddddd8e;
-    .credit-card {
-        position: relative;
-        width: 350px;
-        height: 200px;
-        border-radius: 10px;
-        overflow: hidden;
-        background-image: url("https://www.papierpeintpanoramique.fr/media/catalog/product/cache/871f459736130e239a3f5e6472128962/w/0/w05095-small.jpg");
-        background-size: cover;
-        background-position: center;
-        box-shadow: 2px 2px 2px $themeGris;
-        transform: rotate(-40deg);
-      }
-      
-      .visa {
-        background-color: #000066;
-      }
-      
-      .card-front, .card-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-        border-radius: 10px;
-        color: #fff;
-      }
-      
-      .card-front {
-          background-image: url("https://www.papierpeintpanoramique.fr/media/catalog/product/cache/871f459736130e239a3f5e6472128962/w/0/w05095-small.jpg");
-          background-size: cover;
-        background-position: center;
-        text-shadow: 1px 1px 3px rgb(8, 3, 56);
-        font-weight:bold;
-        box-shadow: 2px 2px 10px #cccccc;
-      }
-      
-      .card-back {
-        background-color: #dddddd;
-        transform: rotateY(180deg);
-      }
-      
-      .card-logo {
-        width: 50px;
-        height: 50px;
-        background-image: url(visa-logo.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 50%;
-        position: absolute;
-        top: 10px;
-        left: 10px;
-      }
-      
-      .card-number {
-        position: absolute;
-        top: 100px;
-        left: 10px;
-        letter-spacing: 0.3ch;
-        font-size: 25px;
-      }
-      
-      .card-holder-name {
-        position: absolute;
-        top: 140px;
-        left: 10px;
-        font-size: 18px;
-      }
-      
-      .expiration-date {
-        position: absolute;
-        top: 160px;
-        right: 10px;
-        font-size: 16px;
-      }
-      
-      .security-code {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        font-size: 24px;
-      }
-      .card-logo img{
-          width:50px;
-          object-fit: contain;
-      }
+   
+    .row{
+        
+        &>div:nth-child(1){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            justify-items: center;
+
+            h4{
+                font-weight: bolder;
+                text-align: center;
+            }
+        }
+
+        &>div:nth-child(2){
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
       
 }
 
@@ -363,16 +304,85 @@
 
         div:nth-child(2){
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
 
             h4{
                 font-weight: bolder;
-                font-size: 2em;
+                font-size: 2.5em;
+            }
+            p{
+                font-size: 1.4em;
+
+                a{
+                    text-decoration: none;
+                    color:#fff;
+                    padding: 10px;
+                    background-color: $themeColor1;
+                    transition: 02s;
+                    font-weight: 500;
+                    border-radius: 10px;
+
+                    &:hover{
+                        background-color: $themeColor2;
+                        text-decoration: none;
+                        transform: scale(1.01);
+
+                    }
+                }
             }
         }
     }
 }
+
+#AccueilSection7{
+    display: flex;
+    padding: 15px;
+
+    div{
+        width: 50%;
+        min-height: 100vh;
+        padding: 10px;
+    }
+
+    &>div:nth-child(1){
+        background-color: red;
+    }
+    &>div:nth-child(2){
+        
+        &>div{
+            display: block;
+            width: 100%;
+            h4{
+                font-weight: bolder;
+            }
+            p{
+                font-size: 1.3em;
+                font-weight: 500;
+            }
+
+            &>div{
+                display: block;
+                p{
+                    font-size: 1.2em;
+                }
+            }
+
+            .ranger{
+               position: relative;
+               display: flex;
+               
+            }
+        }
+
+        
+    }
+
+}
+
+
+
 
 
 @media screen and (max-width:720px){

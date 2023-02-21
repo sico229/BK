@@ -89,9 +89,10 @@
         <div class="container row">
             <div class="col-md-6">
                 <h4>Bénéficiez de votre carte Visa dès l'ouverture de votre compte en ligne</h4>
+                <p>Nous vous offrons les meilleures solutions de payement avec les dernières technologie de sécurité</p>
             </div>
             <div class="col-md-6">
-                <div class="credit-card visa">
+                {{-- <div class="credit-card visa">
                     <div class="card-front">
                         <div class="card-logo">
                             <img src="https://blog.logomyway.com/wp-content/uploads/2022/02/visa-logo-2.jpg"
@@ -105,7 +106,9 @@
                         <div class="security-code">123</div>
                         <div class="card-logo"></div>
                     </div>
-                </div>
+                </div> --}}
+
+                <img class="img img-fluid" src="{{ asset('public/img/Banque-en-ligne.png') }}" alt="">
             </div>
 
         </div>
@@ -120,11 +123,47 @@
     <section id="AccueilSection5">
         <div class="row px-0 mx-0">
             <div class="col-md-6">
-                <img src="{{ asset('public/img/conso.jpg') }}" alt="conso" class="img img-fluid">
+                <img src="{{ asset('public/img/amiesshoppingete.jpg') }}" alt="conso" class="img img-fluid">
             </div>
             <div class="col-md-6">
-                <h4>Obtenez votre prêt en 72H</h4>
+                <h4 class="w-100 text-center">Obtenez votre prêt en 72H</h4>
+                <p class="w-100 text-center">
+                    Nous vous proposons diverses formule de prêts sur mesure spécialement étudiées pour vous accompagner
+                    dans vos projets
+                </p>
+                <p class="w-100 text-center">Simuler gratuitement votre prêt en ligne et obtenez une réponse de principe
+                    dans un delai de 24H</p>
+                <p class="justify-center">
+                    <a href="http://">Demander un Prêt</a>
+                </p>
             </div>
+        </div>
+    </section>
+
+    <section id="AccueilSection7">
+        <div>s</div>
+        <div>
+            <div>
+                <h4 class="w-100 text-center">Simulateur de Prêt</h4>
+                <p>Evaluez gratuitement votre prêt sans engagement de votre part</p>
+                <select class="form-control">
+                    <option value="">Type de Prêt</option>
+                    <option value="">Prêt Consommation</option>
+                    <option value="">Prêt Immobilier</option>
+                    <option value="">Prêt Consommation</option>
+                    <option value="">Prêt Personnel</option>
+                </select>
+                <p class="my-0">Montant Souhaité: <span></span></p>
+                <p class="my-0">Durée de remboursement: <span></span></p>
+                <div class="ranger">
+                    <input type="range" min="500" max="150000" step="500" value="5000">
+                    <span>0</span>
+                    <span>10000</span>
+                </div>
+
+            </div>
+
+
         </div>
     </section>
 @endsection
