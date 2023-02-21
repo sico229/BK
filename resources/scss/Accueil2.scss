@@ -260,6 +260,11 @@
 
 #AccueilSection6{
     padding: 10px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dddddd8e;
     .credit-card {
         position: relative;
         width: 350px;
@@ -269,6 +274,8 @@
         background-image: url("https://www.papierpeintpanoramique.fr/media/catalog/product/cache/871f459736130e239a3f5e6472128962/w/0/w05095-small.jpg");
         background-size: cover;
         background-position: center;
+        box-shadow: 2px 2px 2px $themeGris;
+        transform: rotate(-40deg);
       }
       
       .visa {
@@ -345,6 +352,28 @@
       
 }
 
+#AccueilSection5{
+    padding: 10px;
+    .row{
+        img{
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+
+        div:nth-child(2){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h4{
+                font-weight: bolder;
+                font-size: 2em;
+            }
+        }
+    }
+}
+
 
 @media screen and (max-width:720px){
     #AccueilSection1{
@@ -381,6 +410,13 @@
                 width:90%;
                 margin:5px auto;
             }
+        }
+    }
+    #AccueilSection6{
+        .credit-card.visa{
+            width: 270px;
+            height: 175px;
+            transform: rotate(0deg);
         }
     }
 }

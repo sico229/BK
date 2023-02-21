@@ -85,36 +85,45 @@
         <a href="http://">Ouvrir compte en ligne</a>
     </section>
 
+    <section id="AccueilSection6">
+        <div class="container row">
+            <div class="col-md-6">
+                <h4>Bénéficiez de votre carte Visa dès l'ouverture de votre compte en ligne</h4>
+            </div>
+            <div class="col-md-6">
+                <div class="credit-card visa">
+                    <div class="card-front">
+                        <div class="card-logo">
+                            <img src="https://blog.logomyway.com/wp-content/uploads/2022/02/visa-logo-2.jpg"
+                                alt="Visa Logo">
+                        </div>
+                        <div class="card-number">1234 5678 9012 3456</div>
+                        <div class="card-holder-name">John Doe</div>
+                        <div class="expiration-date">MM/YY</div>
+                    </div>
+                    <div class="card-back">
+                        <div class="security-code">123</div>
+                        <div class="card-logo"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     <section id="AccueilSection4">
         <h2>Nous vous accompagnons dans vos projets</h2>
     </section>
 
-    <section id="AccueilSection6">
-        <div class="container">
-            <div class="credit-card visa">
-                <div class="card-front">
-                    <div class="card-logo">
-                        <img src="https://blog.logomyway.com/wp-content/uploads/2022/02/visa-logo-2.jpg" alt="Visa Logo">
-                    </div>
-                    <div class="card-number">1234 5678 9012 3456</div>
-                    <div class="card-holder-name">John Doe</div>
-                    <div class="expiration-date">MM/YY</div>
-                </div>
-                <div class="card-back">
-                    <div class="security-code">123</div>
-                    <div class="card-logo"></div>
-                </div>
-            </div>
-        </div>
-    </section>
+
 
     <section id="AccueilSection5">
         <div class="row px-0 mx-0">
             <div class="col-md-6">
-
+                <img src="{{ asset('public/img/conso.jpg') }}" alt="conso" class="img img-fluid">
             </div>
             <div class="col-md-6">
-                ghjk
+                <h4>Obtenez votre prêt en 72H</h4>
             </div>
         </div>
     </section>
