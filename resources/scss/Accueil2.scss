@@ -341,19 +341,21 @@
     padding: 15px;
 
     div{
-        width: 50%;
-        min-height: 100vh;
         padding: 10px;
     }
 
     &>div:nth-child(1){
-        background-color: red;
+        width: 40%;
     }
     &>div:nth-child(2){
+        width: 60%;
+        display: flex;
+        flex-direction: column;
         
         &>div{
             display: block;
             width: 100%;
+
             h4{
                 font-weight: bolder;
             }
@@ -369,10 +371,62 @@
                 }
             }
 
-            .ranger{
-               position: relative;
-               display: flex;
-               
+           
+        }
+        &>div:nth-child(2){
+            .range{
+                width: 100%;
+                height: 75px;
+
+
+                .field{
+                    width: 100%;
+                    display: flex;
+                    margin: 0;
+                    padding: 0;
+                    justify-content: space-between;
+
+                    span{
+                        display: block;
+                        width: 90px;
+                        font-size: 0.8em;
+                    }
+
+                    input{
+                        width: 90%;
+                        -webkit-appearance: none;
+                        height: 3px;
+                        width: 100%;
+                        background-color: $themeColor2;
+                        outline: none;
+
+                        &::-webkit-slider-thumb{
+                           -webkit-appearance: none;
+                           width: 12px;
+                           height: 16px;
+                           background-color: $themeColor1;
+                           cursor: pointer;
+                        }
+                    }
+
+                   
+                }
+
+                .sliderValue{
+                    
+                    margin: 0;
+                    padding: 0;
+                    position: relative;
+                    height: 40px;
+                    width: 80%;
+                    margin: 0 auto;
+
+                    span{
+                        position: absolute;
+                        transform: translateX(-50%);                        
+                       
+                    }
+                }
             }
         }
 
@@ -427,6 +481,14 @@
             width: 270px;
             height: 175px;
             transform: rotate(0deg);
+        }
+    }
+    #AccueilSection7{
+        flex-direction: column;
+        padding: 5px;
+        &>div{
+            width: 100%;
+            padding: 2px;
         }
     }
 }

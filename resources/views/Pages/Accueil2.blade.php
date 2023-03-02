@@ -146,21 +146,40 @@
             <div>
                 <h4 class="w-100 text-center">Simulateur de Prêt</h4>
                 <p>Evaluez gratuitement votre prêt sans engagement de votre part</p>
-                <select class="form-control">
+                <select class="form-control" class="TypePret">
                     <option value="">Type de Prêt</option>
-                    <option value="">Prêt Consommation</option>
+                    <option value="conso">Prêt Consommation</option>
                     <option value="">Prêt Immobilier</option>
                     <option value="">Prêt Consommation</option>
                     <option value="">Prêt Personnel</option>
                 </select>
-                <p class="my-0">Montant Souhaité: <span></span></p>
-                <p class="my-0">Durée de remboursement: <span></span></p>
-                <div class="ranger">
-                    <input type="range" min="500" max="150000" step="500" value="5000">
-                    <span>0</span>
-                    <span>10000</span>
-                </div>
+                <p class="my-0">Montant Souhaité: <span class="MtShow"></span></p>
+                <p class="my-0">Durée de remboursement: <span class="DrShow"></span></p>
+                <p class="my-0">Mensualite: <span class="MsShow"></span></p>
+                <p class="my-0">Taux: <span class="TxShow"></span></p>
 
+            </div>
+            <div class="choicer">
+                <div class="range">
+                    <div class="sliderValue">
+                        <span class="montantValue">100</span>
+                    </div>
+                    <div class="field">
+                        <span class="value">5 000€</span>
+                        <input type="range" min="5000" max="200000" step="1000" class="MontantInput">
+                        <span class="value">200 000€</span>
+                    </div>
+                </div>
+                <div class="range">
+                    <div class="sliderValue">
+                        <span class="dureValue">100</span>
+                    </div>
+                    <div class="field">
+                        <span class="value">6 Mois</span>
+                        <input type="range" min="6" max="120" step="3" class="DureInput">
+                        <span class="value">120 Mois</span>
+                    </div>
+                </div>
             </div>
 
 
@@ -168,6 +187,6 @@
     </section>
 @endsection
 @section('scripts')
-    <script type="module" src="{{asset('public/js/template2.js')}}"></script>
-    <script type="module" src="{{asset('public/js/Accueil.js')}}"></script>
+    <script src="{{ asset('public/js/template2.js') }}"></script>
+    <script src="{{ asset('public/js/Accueil.js') }}"></script>
 @endsection
