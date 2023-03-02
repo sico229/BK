@@ -146,12 +146,12 @@
             <div>
                 <h4 class="w-100 text-center">Simulateur de Prêt</h4>
                 <p>Evaluez gratuitement votre prêt sans engagement de votre part</p>
-                <select class="form-control" class="TypePret">
+                <select class="form-control TypePret">
                     <option value="">Type de Prêt</option>
                     <option value="conso">Prêt Consommation</option>
-                    <option value="">Prêt Immobilier</option>
-                    <option value="">Prêt Consommation</option>
-                    <option value="">Prêt Personnel</option>
+                    <option value="immo">Prêt Immobilier</option>
+                    <option value="auto">Prêt auto</option>
+                    <option value="perso">Prêt Personnel</option>
                 </select>
                 <p class="my-0">Montant Souhaité: <span class="MtShow"></span></p>
                 <p class="my-0">Durée de remboursement: <span class="DrShow"></span></p>

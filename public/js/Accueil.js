@@ -11,6 +11,10 @@ $(".TypePret").change((e) => {
             break;
         case "perso":
             taux = 0.28;
+            break;
+        case "auto":
+            taux = 0.27;
+            break;
 
         default:
             taux = 0.23;
