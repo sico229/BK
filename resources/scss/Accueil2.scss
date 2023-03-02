@@ -342,10 +342,26 @@
 
     div{
         padding: 10px;
+
+        a{
+            background-color: $themeColor2;
+            color: #fff;
+            transition: 0.2s;
+
+            &:hover{
+                background-color: $themeColor1;
+                transition: 0.2s;
+                text-decoration: none;
+            }
+        }
     }
 
     &>div:nth-child(1){
         width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
     }
     &>div:nth-child(2){
         width: 60%;
@@ -430,10 +446,19 @@
             }
         }
 
+
+
         
     }
 
 }
+
+#AccueilSection8{
+    padding: 10px;
+    background-color: rgba(221, 221, 221, 0.5568627451);
+    min-height: 80vh;
+  }
+  
 
 
 
@@ -487,8 +512,12 @@
         flex-direction: column;
         padding: 5px;
         &>div{
-            width: 100%;
+            width: 100% !important;
             padding: 2px;
+        }
+        &>div:nth-child(1){
+            width: 100%;
+            z-index: 1;
         }
     }
 }

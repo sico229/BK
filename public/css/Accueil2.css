@@ -285,8 +285,22 @@
 #AccueilSection7 div {
   padding: 10px;
 }
+#AccueilSection7 div a {
+  background-color: #00915a;
+  color: #fff;
+  transition: 0.2s;
+}
+#AccueilSection7 div a:hover {
+  background-color: #036640;
+  transition: 0.2s;
+  text-decoration: none;
+}
 #AccueilSection7 > div:nth-child(1) {
   width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
 }
 #AccueilSection7 > div:nth-child(2) {
   width: 60%;
@@ -354,6 +368,12 @@
   transform: translateX(-50%);
 }
 
+#AccueilSection8 {
+  padding: 10px;
+  background-color: rgba(221, 221, 221, 0.5568627451);
+  min-height: 80vh;
+}
+
 @media screen and (max-width: 720px) {
   #AccueilSection1 h2 {
     font-size: 1.1em;
@@ -393,8 +413,12 @@
     padding: 5px;
   }
   #AccueilSection7 > div {
-    width: 100%;
+    width: 100% !important;
     padding: 2px;
+  }
+  #AccueilSection7 > div:nth-child(1) {
+    width: 100%;
+    z-index: 1;
   }
 }
 

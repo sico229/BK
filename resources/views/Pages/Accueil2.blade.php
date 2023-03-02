@@ -141,50 +141,136 @@
     </section>
 
     <section id="AccueilSection7">
-        <div>s</div>
+        <div>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Prêt Consommation
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Bénéficiez d'un prêt consommation accessible en 72 heures et pouvant atteindre 75 000€,
+                            remboursable jusqu'en 36 mois à un taux exceptionnel de 2.8%
+                        </div>
+                        <div>
+                            <a href="" class="btn">Demander un Prêt</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Prêt Immobilier
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Nous vous proposons un prêt immobilier à un taux de 2.8% pouvant atteindre jusqu'à 500000€ et
+                            remboursable jusqu'à 15 ans
+                        </div>
+                        <div>
+                            <a href="" class="btn">Demander un Prêt</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Prêt Personnel
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Bénéficiez d'un prêt personnel pour vos besoins urgent d'argent. Nous vous proposons une formule
+                            de prêt personnel accessibles en 72H maximum à un taux exceptionnel de 2.3%
+                        </div>
+                        <div>
+                            <a href="" class="btn">Demander un Prêt</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Prêt Automobile
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Un prêt automobile pour vos envie s'auto neuve ou de seconde main. Nous vous accompagnons avec
+                            un
+                        </div>
+                        <div>
+                            <a href="" class="btn">Demander un Prêt</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div>
             <div>
                 <h4 class="w-100 text-center">Simulateur de Prêt</h4>
                 <p>Evaluez gratuitement votre prêt sans engagement de votre part</p>
-                <select class="form-control TypePret">
+                <select class="form-control TypePret col-md-6">
                     <option value="">Type de Prêt</option>
                     <option value="conso">Prêt Consommation</option>
                     <option value="immo">Prêt Immobilier</option>
                     <option value="auto">Prêt auto</option>
                     <option value="perso">Prêt Personnel</option>
                 </select>
-                <p class="my-0">Montant Souhaité: <span class="MtShow"></span></p>
-                <p class="my-0">Durée de remboursement: <span class="DrShow"></span></p>
-                <p class="my-0">Mensualite: <span class="MsShow"></span></p>
-                <p class="my-0">Taux: <span class="TxShow"></span></p>
+                <p class="my-0">Montant Souhaité: <span class="MtShow">----</span></p>
+                <p class="my-0">Durée de remboursement: <span class="DrShow">----</span></p>
+                <p class="my-0">Mensualite: <span class="MsShow">----</span></p>
+                <p class="my-0">Taux: <span class="TxShow">----</span></p>
 
             </div>
             <div class="choicer">
                 <div class="range">
                     <div class="sliderValue">
-                        <span class="montantValue">100</span>
+                        <span class="montantValue">10000€</span>
                     </div>
                     <div class="field">
                         <span class="value">5 000€</span>
-                        <input type="range" min="5000" max="200000" step="1000" class="MontantInput">
+                        <input type="range" min="5000" max="200000" step="1000" value="10000"
+                            class="MontantInput">
                         <span class="value">200 000€</span>
                     </div>
                 </div>
                 <div class="range">
                     <div class="sliderValue">
-                        <span class="dureValue">100</span>
+                        <span class="dureValue">6 Mois</span>
                     </div>
                     <div class="field">
                         <span class="value">6 Mois</span>
-                        <input type="range" min="6" max="120" step="3" class="DureInput">
+                        <input type="range" min="6" max="120" step="3" value="9"
+                            class="DureInput">
                         <span class="value">120 Mois</span>
                     </div>
+                </div>
+                <div class="w-100 d-flex justify-content-center">
+                    <a href="http://" class="btn btn-lg">Demander un Prêt</a>
                 </div>
             </div>
 
 
         </div>
     </section>
+
+    <div id="AccueilSection8">
+        <div class="w-100 d-flex justify-content-center">
+            <h4>Nos Partenaires</h4>
+        </div>
+    </div>
 @endsection
 @section('scripts')
     <script src="{{ asset('public/js/template2.js') }}"></script>
